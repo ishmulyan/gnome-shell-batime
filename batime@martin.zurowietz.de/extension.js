@@ -31,7 +31,7 @@ const _powerToggleSyncOverride = function () {
    let minutes = time % 60;
    let hours = Math.floor(time / 60);
 
-   this.title = _('%d\u2236%02d').format(hours, minutes)
+   this.title = `${this._proxy.Percentage}% ${hours}:${String(minutes).padStart(2, '0')}`;
 
    return true;
 };
